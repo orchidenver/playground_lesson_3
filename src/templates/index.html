@@ -1,10 +1,20 @@
-{% set title="Main Page" %}
-{% set lang="en" %}
-
+{% set title = 'Main page' %}
 {% include 'parts/_head.html' %}
+<main>
+    <h1>Main page</h1>
+    <section class="services">
+        <h2 class="services--h">
+            Services
+        </h2>
+        {% set items = ['Training', 'Consultation', 'Code review'] %}
+        <ul class="services--list list">
+            {% for item in items %}
+            <li class="list-item">
+                {{ item }}
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</main>
 
-{% include 'parts/_header.html' %}
-
-
- 
-{% include 'parts/_foot.html' %}
+{% include 'parts/_footer.html' %}

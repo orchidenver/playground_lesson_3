@@ -10,27 +10,4 @@
 </head>
 
 <header class="main-header">
-    <a class="main-header--logolink" href="index.html">{% include 'parts/svgo/logo-ofpery.svg' %}</a>
-
-    <nav class="main-header--nav nav">
-        {%
-        set menuLinks = [
-        {
-        link:'index.html',
-        text: 'Main page'
-        },
-        {
-        link:'schedule.html',
-        text: 'Schedule'
-        },
-        {
-        link:'prices.html',
-        text: 'Prices'
-        }
-        ]
-        %}
-        {% for link in menuLinks %}
-        <a class="nav--link" href="{{ link.link }}">{{ link.text }}</a>
-        {% endfor %}
-    </nav>
 </header>

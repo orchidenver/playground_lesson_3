@@ -29,31 +29,24 @@ video{
 	height: auto;
 }
 
-a{
-	text-decoration: none;
-	color: @aColor;
-
-	&:hover {
-		color: @aHover;
+.exp{
+	.block{
+		height: 100px;
+		background-color: #eee;
+		margin-top: 20px;
+		.size(3);
+		.size-md(6);
+		.size-sm(9);
+		.size-xxs(18);
+		.col();
 	}
 }
-
-.main-header {
-	max-width: 1200px;
-	margin: 0 auto;
-	background-color: @backColor;
-	color: #111;
-	padding: 10px;
-
-	&--logolink {
-		&:hover {
-			path {
-				fill: @svgColor;
-			}
-		}
-	}
+.row {
+	.row-flex();
 }
-
-h2 {
-	.mb(30px);
+.wrapper {
+	.wrapper();
+}
+.col {
+	.col();
 }

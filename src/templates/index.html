@@ -1,19 +1,16 @@
 {% set title = 'Main page' %}
 {% include 'parts/_head.html' %}
 <main>
-    <h1>Main page</h1>
-    <section class="services">
-        <h2 class="services--h">
-            Services
-        </h2>
-        {% set items = ['Training', 'Consultation', 'Code review'] %}
-        <ul class="services--list list">
-            {% for item in items %}
-            <li class="list-item">
-                {{ item }}
-            </li>
-            {% endfor %}
-        </ul>
+    <section class="exp wrapper">
+        <h1 class="exp__h1">Grid experiment</h1>
+        <div class="row">
+            <div class="block block1"></div>
+            <div class="block block2"></div>
+            <div class="block block3"></div>
+            <div class="block block4"></div>
+            <div class="block block5"></div>
+            <div class="block block6"></div>
+        </div>
     </section>
 </main>
 
